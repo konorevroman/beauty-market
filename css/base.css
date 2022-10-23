@@ -1,0 +1,21 @@
+/* Main theme and media*/
+
+body {
+    font-family: 'Bebas Neue Book';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2;
+    background: #F5F5F5;
+}
+
+.main-frame {
+    width: 1920px;
+    margin: auto;
+    background-color: var(--main-background-color);
+}
+
+@media screen and (max-width: 1920px) {
+    .main-frame {
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+.hover-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-banner img {
+    transition: transform 1s ease-in-out;
+}
+
+.hover-banner > .hover-text {
+    font-family: 'Garamond';
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0);
+    position: absolute;
+    display: flex;  
+    align-content: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    transition: color 0.5s ease-in-out, background-color 1s ease-in-out;
+}
+
+
+.hover-banner:hover > .hover-text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: color 1s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.hover-banner:hover img {
+    transform: scale(1.1);
+}
